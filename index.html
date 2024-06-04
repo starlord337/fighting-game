@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="position: relative; display: inline-block;">
+        <div style="
+            position: absolute;
+            display: flex;
+            width: 100%;
+            align-items: center;
+            padding: 20px;
+            flex-shrink: 0;">
+            <div style="
+            width: 100%;
+            height: 30px;
+            position: relative; display: flex; justify-content: flex-end">
+                <div style="
+               background-color: yellow; height: 30px; width: 100%;"></div>
+                <div id="playerHealth" style="
+               position: absolute; width: 100%;
+                background-color: blue; top: 0; bottom: 0; right: 0;"></div>
+            </div>
+            <div id="timer" style="
+            background-color: red;
+             width: 100px;
+             height: 100px;
+             flex-shrink: 0;
+             display: flex;
+             align-items: center;
+             justify-content: center;">
+                10
+            </div>
+            <div style="
+             width: 100%;
+             height: 30px;
+             position: relative;">
+                <div style="
+                background-color: yellow; height: 30px; z-index: 1;"></div>
+                <div id="enemyHealth" style="
+                position: absolute;
+                 background-color: blue; top: 0; bottom: 0; right: 0; left: 0;"></div>
+            </div>
+        </div>
+        <div id="result" style="
+        position: absolute; 
+        color: white;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: none;">Tie</div>
+        <canvas id="canvas"></canvas>
+    </div>
+</body>
+<script src="js/utils.js"></script>
+<script src="js/classes.js"></script>
+<script src="index.js"></script>
+
+</html>
